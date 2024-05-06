@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Phone Mouse</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="mouse-container">
+            <div id="leftButton" class="mouse-button" ontouchstart="leftMouseDown()" ontouchend="leftMouseUp()">
+                <!-- Left mouse -->
+            </div>
+            <div id="rightButton" class="mouse-button" ontouchstart="rightMouseDown()" ontouchend="rightMouseUp()">
+                <!-- Right mouse -->
+            </div>
+        </div>
+        <div id="camera-container">
+            <canvas class="testcam"></canvas>
+            <div id="status"></div>
+        </div>
+    </div>
+    <script src="cordova.js"></script> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mouse-events.js"></script>
+    <script src="js/camera-handling.js"></script>
+</body>
+</html>
